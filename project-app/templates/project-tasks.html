@@ -1,0 +1,20 @@
+<html>
+	<body>
+		<h1>{{project.title}}</h1>
+
+		<ul>
+			{% for task in tasks %}
+				<li>{{ task.description }}</li>
+			{% endfor %}
+		</ul>
+
+		<h3>Add New Task</h3>
+		<form action="/add/task/{{ project.project_id }}" method="POST">
+			<div>
+				Task: <input type="text" name="task-description">
+			</div>
+			<br>
+			<input type="submit" value="Add Task">
+		</form>
+	</body>
+</html>
