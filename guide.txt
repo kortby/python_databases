@@ -1,0 +1,30 @@
+create mysql database:
+$ mysql -uroot
+> CREATE DATABASE <database-name>
+> \q
+
+
+
+
+
+create work enviorment
+$ virtualenv mysql-csv-workspace
+
+install mysql-connector
+$ pip3 install mysql-connector
+
+--------------------------------
+postgres:
+---------------------------------
+
+$ psql -U postgres
+> CREATE DATABASE <name>
+> \q
+
+$ virtualenv postgres-workspace
+$ cd postgres-workspace
+$ source bin\activate
+
+$ pip3 install psycopg2-binary
+
+
